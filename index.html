@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<style>
+    svg .document:hover {
+        fill: #333;
+    }
+</style>
+<!-- <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>-->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://unpkg.com/d3-simple-slider"></script>
+<select id="cluster_select" disabled>
+    <option value="topic_cluster">Topic cluster</option>
+    <option value="c_f_cluster">Citation cluster</option>
+</select>
+
+<div id="menu">
+    <h2>Range</h2>
+    <div class="row align-items-center">
+        <div class="col-sm-2"><p id="value-range"></p></div>
+        <div class="col-sm"><div id="slider-range"></div></div>
+    </div>
+    <div>
+        <pre id="cluster_description"></pre>
+    </div>
+    <div id='cluster_cards_container'>
+        <!-- <div class="card border-success mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-success" id='ClusterID'>
+            Cluster
+        </div>
+        <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-align-right" aria-hidden="true"></span>Delete
+        </button>
+        <div class="card-body text-success">
+          <h6 class="card-title">Key Words</h6>
+          <p class="card-text" id='kw'>keywords</p>
+          <h6 class="card-title">Cited Documents</h6>
+          <p class="card-text" id='ClusterCitedDocs'>documents</p>
+          
+        </div>
+        <div class="card-footer bg-transparent border-success" id='ClusterYearRange'>Year</div>
+      </div> -->
+    </div>
+    
+</div>
+<!-- 
+<div class="card border-success mb-3" style="max-width: 18rem;">
+    <div class="card-header bg-transparent border-success">Header</div>
+    <div class="card-body text-success">
+      <h5 class="card-title">Success card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <div class="card-footer bg-transparent border-success">Footer</div>
+  </div> -->
+
+<div id="viz">
+</div>
+
+
+<!-- <script  src="scripts/force.js" charset="utf-8"> </script>-->
+<script  src="scripts/main.js" charset="utf-8"> </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</script>
+</body>
+
